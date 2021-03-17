@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9E9FC2C-599E-13FE-D61D-A7BEF4AC21B1" name="COLABORADORES">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>8A09D8C5-761B-B5C4-2BAF-11F9F890FB91</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<abbreviation>clb</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="clb_pes_id" id="4767E18C-CA4E-DEFC-FEA8-F8E86E004740">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>256C5322-9DD1-298C-F79D-4C187973AC96</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="162938A9-F015-9D0F-4895-E2B73792EF45" referredColumn="878C1FF0-1945-5254-5441-06A893159AA2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D278D8F-77A6-37F0-212C-73C976F7E83F" name="PK_CLB">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>04C3B2E3-09FC-2756-DD33-FFC33981A6B1</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4767E18C-CA4E-DEFC-FEA8-F8E86E004740"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8382521A-3D46-CD2E-95F9-835074DE6516" name="FK_CLB_PES">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>531828FB-322B-D9BE-3007-66685D0A0F87</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4767E18C-CA4E-DEFC-FEA8-F8E86E004740"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CAEE6203-69D0-DC83-3086-A35F5021A9D4" name="PESSOAS">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 18:17:32 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>pes</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pes_id" id="256C5322-9DD1-298C-F79D-4C187973AC96">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 18:22:27 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pes_prim_nome" id="5E5DC74B-3185-7611-5BFD-D3FB6F48541B">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 18:21:13 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pes_meio_nome" id="E23EA00C-1AF8-5147-8D10-7905D713E427">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 18:21:13 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pes_ult_nome" id="0D424011-8A21-E1FB-36FB-212BC2B66239">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 18:21:13 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pes_senha" id="9A7F1376-3646-E6BB-3C48-22103B922A89">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 18:25:57 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pes_email" id="D9692EA3-4899-88A6-47D1-A3F8BF4DAD8F">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 18:25:57 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="04C3B2E3-09FC-2756-DD33-FFC33981A6B1" name="PESSOAS PK">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 18:23:37 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>256C5322-9DD1-298C-F79D-4C187973AC96</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

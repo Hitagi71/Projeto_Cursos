@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A09D8C5-761B-B5C4-2BAF-11F9F890FB91" name="COLABORADORES">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-13 03:52:31 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>CAEE6203-69D0-DC83-3086-A35F5021A9D4</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>clb</shortName>
+</Entity>

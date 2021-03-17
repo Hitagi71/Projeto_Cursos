@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1AC68C7-A30F-5D3D-2539-56A8F6210832" name="AUTORES">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>7045D832-6FD3-1FF6-AB04-B0E452F42138</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<abbreviation>aut</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="aut_pes_id" id="1036E18A-E427-8BFD-8DBC-575AF93AD9AE">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>256C5322-9DD1-298C-F79D-4C187973AC96</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54CC1F77-379C-ED95-7ABD-2D534C385490" referredColumn="878C1FF0-1945-5254-5441-06A893159AA2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8D6277A-9DE4-C17D-7D10-95B6053663B6" name="PK_AUT">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>04C3B2E3-09FC-2756-DD33-FFC33981A6B1</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1036E18A-E427-8BFD-8DBC-575AF93AD9AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE510AB8-55CB-C186-8ED5-E369AB0CB3F8" name="FK_AUT_PES">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>D1B42A7F-48FE-9F29-B823-820861776E8A</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1036E18A-E427-8BFD-8DBC-575AF93AD9AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

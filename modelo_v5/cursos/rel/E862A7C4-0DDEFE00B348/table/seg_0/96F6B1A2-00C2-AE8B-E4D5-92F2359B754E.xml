@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96F6B1A2-00C2-AE8B-E4D5-92F2359B754E" name="ACESSOS_COLABORADORES_CURSOS">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<ordsAlias>acessam</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ass_cur_id" id="778B984A-457E-D8BA-E305-19403CDE2451">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17FC1554-566B-269E-BF59-4931EB446544" referredColumn="980E5AED-AA3F-734A-E0C0-87131FE2B924"/>
+</associations>
+</Column>
+<Column name="ass_dt_acesso" id="124A5C3D-286D-150C-9326-DEA968A04343">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>3E79A2C9-E50D-A1FE-A9F7-9AB95C339D30</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="ass_clb_pes_id" id="B9EA26DE-BFC8-6403-26AA-484FA0F40A49">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-24 00:46:44 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9451B842-491E-2399-E0B8-ED2A754ADFEE" referredColumn="4767E18C-CA4E-DEFC-FEA8-F8E86E004740"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9DA504C3-5DE5-1A98-DB81-487520AC301A" name="PK_ASS">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="778B984A-457E-D8BA-E305-19403CDE2451"/>
+<colUsage columnID="B9EA26DE-BFC8-6403-26AA-484FA0F40A49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F74C361F-4B3D-EF35-2F7D-9E192CCFB539" name="FK_ASS_CUR">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>69B3445A-1BD2-823A-5764-5C72AAC736AC</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="778B984A-457E-D8BA-E305-19403CDE2451"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E60087B-3F2C-0DA4-E062-839A9B3B5F8B" name="FK_ASS_CLB">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-24 00:46:44 UTC</createdTime>
+<generatorID>04C3B2E3-09FC-2756-DD33-FFC33981A6B1</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9EA26DE-BFC8-6403-26AA-484FA0F40A49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

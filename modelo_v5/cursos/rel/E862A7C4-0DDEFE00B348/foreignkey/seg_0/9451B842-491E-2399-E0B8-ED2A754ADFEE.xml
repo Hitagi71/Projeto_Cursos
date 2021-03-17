@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9451B842-491E-2399-E0B8-ED2A754ADFEE" containerWithKeyObject="96F6B1A2-00C2-AE8B-E4D5-92F2359B754E" localFKIndex="4E60087B-3F2C-0DA4-E062-839A9B3B5F8B" name="FK_ASS_CLB">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-24 00:46:44 UTC</createdTime>
+<generatorID>04C3B2E3-09FC-2756-DD33-FFC33981A6B1</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<referredTableLongName>COLABORADORES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E9E9FC2C-599E-13FE-D61D-A7BEF4AC21B1</referredTableID>
+<keyObject>4D278D8F-77A6-37F0-212C-73C976F7E83F</keyObject>
+<referredKeyID>4D278D8F-77A6-37F0-212C-73C976F7E83F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>clb_pes_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

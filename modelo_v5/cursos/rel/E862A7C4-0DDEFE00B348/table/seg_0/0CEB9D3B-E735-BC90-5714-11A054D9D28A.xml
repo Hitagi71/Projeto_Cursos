@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0CEB9D3B-E735-BC90-5714-11A054D9D28A" name="PESSOAS">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>CAEE6203-69D0-DC83-3086-A35F5021A9D4</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<abbreviation>pes</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pes_id" id="878C1FF0-1945-5254-5441-06A893159AA2">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>256C5322-9DD1-298C-F79D-4C187973AC96</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pes_prim_nome" id="F888A4AE-E435-17C0-40A6-D35250B8099A">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>5E5DC74B-3185-7611-5BFD-D3FB6F48541B</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pes_meio_nome" id="641DFDC9-50C0-C9DE-D583-C2327855BDC0">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>E23EA00C-1AF8-5147-8D10-7905D713E427</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pes_ult_nome" id="BBDF860D-7582-1036-DF5A-5CCAF950BCD9">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>0D424011-8A21-E1FB-36FB-212BC2B66239</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pes_senha" id="69582B80-B717-AF19-67DC-2A27F27953F0">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>9A7F1376-3646-E6BB-3C48-22103B922A89</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pes_email" id="D20894C9-6E76-8F7A-CEC8-7F3F2482D46F">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>D9692EA3-4899-88A6-47D1-A3F8BF4DAD8F</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5664887D-A3CA-7061-1B3C-F80F4B9DF476" name="PK_PES">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>04C3B2E3-09FC-2756-DD33-FFC33981A6B1</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="878C1FF0-1945-5254-5441-06A893159AA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

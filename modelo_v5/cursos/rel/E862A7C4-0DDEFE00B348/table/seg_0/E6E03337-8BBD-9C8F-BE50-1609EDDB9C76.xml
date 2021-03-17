@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6E03337-8BBD-9C8F-BE50-1609EDDB9C76" name="CURSOS">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>EC2709D1-09CC-BE5B-B1D2-8606234A159E</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<abbreviation>cur</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cur_id" id="980E5AED-AA3F-734A-E0C0-87131FE2B924">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>CC452042-F1EF-6A93-B2F1-C748CDF6F33F</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cur_nome" id="77C7F358-4E18-3D0E-4106-14B7911B167A">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>3DFF4574-3DCC-A18A-8B3C-C692304BE79E</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cur_descricao" id="4BA082DD-E015-F377-8D62-8F5B0E589B2C">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>A0E8AA85-ABC4-B179-E46D-20CAC994646C</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cur_preco" id="142CD3F9-82CE-3838-CB24-5EF218AC9A5A">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>9AF36CBE-6BC7-22D4-E8E0-0DAE67551BA5</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cur_link" id="79552F04-D356-8E94-2E34-459F1DD34901">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>2D808738-A9F2-07E9-6133-CC073A8DF142</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cur_aut_pes_id" id="2A8BF1A7-9252-5987-A758-F6B68376E3ED">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-24 01:13:30 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01A011CF-DDE6-0ED5-69E2-3B0BDD8BE131" referredColumn="1036E18A-E427-8BFD-8DBC-575AF93AD9AE"/>
+</associations>
+</Column>
+<Column name="cur_ctg_id" id="9D53BE6A-EC89-1C64-F33E-F522B178C557">
+<createdBy>Souza</createdBy>
+<createdTime>2021-03-09 14:47:25 UTC</createdTime>
+<generatorID>3A2E9846-8966-9B0B-1707-24F440F4B85A</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94772B21-11E1-B0CD-8F28-7F2CD92BA463" referredColumn="31ACD535-2B2B-09CA-53E2-02C1078B0D57"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC25DC75-21DE-065C-9CFE-BF8CFEA926EE" name="PK_CUR">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>A5AAB661-26C1-4707-FBC9-AD8FAE8991C5</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="980E5AED-AA3F-734A-E0C0-87131FE2B924"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FA10713-521A-868D-2CA7-5D6CB08DA2C1" name="FK_CUR_AUT">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-24 01:13:30 UTC</createdTime>
+<generatorID>04C3B2E3-09FC-2756-DD33-FFC33981A6B1</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A8BF1A7-9252-5987-A758-F6B68376E3ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D6082DC-57F8-7BC8-4E6D-520C6FBF8F49" name="FK_CUR_CTG">
+<createdBy>Souza</createdBy>
+<createdTime>2021-03-09 14:47:25 UTC</createdTime>
+<generatorID>1680E085-5C32-E10A-756E-C8B351ABEF71</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D53BE6A-EC89-1C64-F33E-F522B178C557"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CATEGORIA_CURSO" directorySegmentName="seg_0" id="1680E085-5C32-E10A-756E-C8B351ABEF71">
+<createdBy>Souza</createdBy>
+<createdTime>2021-03-09 14:42:00 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<sourcePk>A5AAB661-26C1-4707-FBC9-AD8FAE8991C5</sourcePk>
+<targetPk>5821583A-AA8F-FAEB-3749-1CA427CAD026</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>EC2709D1-09CC-BE5B-B1D2-8606234A159E</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>73CFDD4E-DA3F-8FAD-9F96-85212CD429A4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

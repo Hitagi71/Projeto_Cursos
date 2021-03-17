@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="73CFDD4E-DA3F-8FAD-9F96-85212CD429A4" name="CATEGORIAS">
+<createdBy>Souza</createdBy>
+<createdTime>2021-03-09 14:39:16 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ctg_id" id="6E76FDCA-48A1-13EC-32E7-9EEF4C98B4C5">
+<createdBy>Souza</createdBy>
+<createdTime>2021-03-09 14:39:27 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ctg_nome" id="54410DCE-EB0F-C419-5B81-BDE06BC47F10">
+<createdBy>Souza</createdBy>
+<createdTime>2021-03-09 14:40:03 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5821583A-AA8F-FAEB-3749-1CA427CAD026" name="CATEGORIAS PK">
+<createdBy>Souza</createdBy>
+<createdTime>2021-03-09 14:40:01 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E76FDCA-48A1-13EC-32E7-9EEF4C98B4C5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FORNECEM" directorySegmentName="seg_0" id="EED51AB8-8509-4AC0-8F06-2A81CA1E3A47">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-13 15:43:17 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<sourcePk>3350E301-10E1-4424-9832-523B100007C3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7045D832-6FD3-1FF6-AB04-B0E452F42138</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EC2709D1-09CC-BE5B-B1D2-8606234A159E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

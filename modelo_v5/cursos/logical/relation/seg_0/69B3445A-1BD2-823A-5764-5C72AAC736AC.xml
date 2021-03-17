@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ACESSAM" directorySegmentName="seg_0" id="69B3445A-1BD2-823A-5764-5C72AAC736AC">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-13 15:37:56 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>8A09D8C5-761B-B5C4-2BAF-11F9F890FB91</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EC2709D1-09CC-BE5B-B1D2-8606234A159E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="dt_acesso" id="3E79A2C9-E50D-A1FE-A9F7-9AB95C339D30">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-13 15:38:47 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<engineerTo>
+<item key="E862A7C4-8720-E8E4-6610-0DDEFE00B348" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D804BD6-7242-5C17-5EF9-5EC718AF3FDB" name="COMPRAS_CURSOS">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<ordsAlias>compras</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="com_cur_id" id="E2AB10BE-37E7-0D5F-A5D6-56D099D05E5F">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD48AD77-4B5C-DE79-79D6-D8F9E2B2C141" referredColumn="980E5AED-AA3F-734A-E0C0-87131FE2B924"/>
+</associations>
+</Column>
+<Column name="com_dt_fim_acesso" id="CF9CDD4A-B4B9-20A1-0E6E-B57AD1C04017">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>8924BC71-965F-8F85-8EAC-3315CB30CCD1</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="com_dt_inicio_acesso" id="D0C18560-E256-604A-1ECA-867E346A97BC">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>F3752E65-B355-2459-4ACB-497FBAFAA33E</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="com_nota_teste" id="60D379E7-61F3-26EA-CF3B-0B11422D2559">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>410A6C71-F279-B245-C860-C617793AD794</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="com_pag_realizado" id="91817210-BEBC-EF58-A850-6B81DCC2FFD9">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>D2A72941-E47F-DE99-7EB2-2BE48A47A18F</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="com_aln_pes_id" id="A8D1AA2D-A099-1427-03CA-0498D293C5C7">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6ECE4F3B-0EF2-ED3F-AAC0-C91EBD7AE724" referredColumn="A774874F-642C-F36F-7569-8C658D6F4438"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC51E69A-BCA2-0966-3266-0456CA94E37A" name="PK_COM">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<ownerDesignName>cursos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2AB10BE-37E7-0D5F-A5D6-56D099D05E5F"/>
+<colUsage columnID="A8D1AA2D-A099-1427-03CA-0498D293C5C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F989EABA-9FFF-DBA0-83C8-15239A3D342B" name="FK_COM_CUR">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 16:37:18 UTC</createdTime>
+<generatorID>E53BF174-CC24-363D-F0C9-1262A3387530</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2AB10BE-37E7-0D5F-A5D6-56D099D05E5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE825435-270D-AA87-6FB8-0BCB5953F116" name="FK_COM_ALN">
+<createdBy>Souza</createdBy>
+<createdTime>2021-02-19 19:40:01 UTC</createdTime>
+<generatorID>E53BF174-CC24-363D-F0C9-1262A3387530</generatorID>
+<ownerDesignName>cursos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8D1AA2D-A099-1427-03CA-0498D293C5C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
