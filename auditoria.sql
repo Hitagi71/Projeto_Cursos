@@ -61,7 +61,7 @@ begin
 end;
 /
 
-create or replace trigger tg_aud_aut after insert or delete or update on colaboradores for each row
+create or replace trigger tg_aud_clb after insert or delete or update on colaboradores for each row
 declare
     v_usuario varchar(30);
 begin
@@ -70,11 +70,11 @@ begin
     from dual;
     
     if inserting then
-        proc_insere_audit(v_usuario, 'INSERT', 'Colaboradores', :new.aut_pes_id);
+        proc_insere_audit(v_usuario, 'INSERT', 'Colaboradores', :new.clb_pes_id);
     elsif updating then
-        proc_insere_audit(v_usuario, 'UPDATE', 'Colaboradores', :new.aut_pes_id);
+        proc_insere_audit(v_usuario, 'UPDATE', 'Colaboradores', :new.clb_pes_id);
     else
-        proc_insere_audit(v_usuario, 'DELETE', 'Colaboradores', :old.aut_pes_id);
+        proc_insere_audit(v_usuario, 'DELETE', 'Colaboradores', :old.clb_pes_id);
     end if;
 end;
 /
