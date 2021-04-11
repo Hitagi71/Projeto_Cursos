@@ -61,6 +61,24 @@ begin
 end;
 /
 
+create or replace trigger tg_aud_aut after insert or delete or update on colaboradores for each row
+declare
+    v_usuario varchar(30);
+begin
+    select user
+    into v_usuario
+    from dual;
+    
+    if inserting then
+        proc_insere_audit(v_usuario, 'INSERT', 'Colaboradores', :new.aut_pes_id);
+    elsif updating then
+        proc_insere_audit(v_usuario, 'UPDATE', 'Colaboradores', :new.aut_pes_id);
+    else
+        proc_insere_audit(v_usuario, 'DELETE', 'Colaboradores', :old.aut_pes_id);
+    end if;
+end;
+/
+
 create or replace trigger tg_aud_ctg after insert or delete or update on categorias for each row
 declare
     v_usuario varchar(30);
