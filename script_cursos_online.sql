@@ -30,8 +30,8 @@ CREATE TABLE colaboradores (
 CREATE TABLE compras_cursos (
     com_cur_id            NUMBER(6),
     com_aln_pes_id        NUMBER(6),
-    com_dt_inicio_acesso  DATE,
-    com_dt_fim_acesso     DATE,
+    com_dt_compra         DATE,
+    com_dt_ultimo_acesso  DATE,
     com_nota_teste        FLOAT(2),
     com_pag_realizado     CHAR(1)
 );
@@ -124,8 +124,8 @@ ALTER TABLE categorias
     ADD CONSTRAINT CK_CTG_NN_01 CHECK (ctg_nome IS NOT NULL)
 
 ALTER TABLE compras_cursos
-    ADD CONSTRAINT CK_COM_NN_01 CHECK (com_dt_inicio_acesso IS NOT NULL)
-    ADD CONSTRAINT CK_COM_NN_02 CHECK (com_dt_fim_acesso IS NOT NULL);
+    ADD CONSTRAINT CK_COM_NN_01 CHECK (com_dt_compra IS NOT NULL)
+    ADD CONSTRAINT CK_COM_NN_02 CHECK (com_dt_ultimo_acesso IS NOT NULL);
 
 ALTER TABLE cursos
     ADD CONSTRAINT CK_CUR_NN_01 CHECK (cur_nome IS NOT NULL)
@@ -188,8 +188,8 @@ comment on column colaboradores.clb_pes_id is 'Esta coluna é a pk da relação 
 
 comment on table compras_cursos is 'Esta tabela armazena dados referentes aos colaboradores.';
 comment on column compras_cursos.com_cur_id is 'Esta coluna compõe a pk da relação e é uma fk referenciando a tabela CURSOS no campo cur_id';
-comment on column compras_cursos.com_dt_fim_acesso is 'Esta coluna armazena o dado relacionado a data do fim do acesso do aluno ao curso';
-comment on column compras_cursos.com_dt_inicio_acesso is 'Esta coluna armazena o dado relacionado a data do início do acesso do aluno ao curso';
+comment on column compras_cursos.com_dt_ultimo_acesso is 'Esta coluna armazena o dado relacionado a data do fim do acesso do aluno ao curso';
+comment on column compras_cursos.com_dt_compra is 'Esta coluna armazena o dado relacionado a data do início do acesso do aluno ao curso';
 comment on column compras_cursos.com_nota_teste is 'Esta coluna armazena o dado relacionado a nota no teste final do curso';
 comment on column compras_cursos.com_pag_realizado is 'Esta coluna armazena o dado relacionado a verificação se o pagamento do curso foi realizado ou não';
 comment on column compras_cursos.com_aln_pes_id is 'Esta coluna compõe a pk da relação e é uma fk referenciando a tabela ALUNOS no campo aln_pes_id';
@@ -222,7 +222,7 @@ CREATE TABLE HALUNOS(
 CREATE TABLE HCOMPRAS_CURSOS(
     com_cur_id            NUMBER(6),
     com_aln_pes_id        NUMBER(6),
-    com_dt_fim_acesso     DATE,
+    com_dt_ultimo_acesso     DATE,
     com_nota_teste        FLOAT(2),
     com_pag_realizado     CHAR(1),
 	COM_DATAHORA DATE
