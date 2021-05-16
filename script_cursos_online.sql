@@ -260,7 +260,7 @@ END;
 
 CREATE TRIGGER TG_HCOMPRAS_CURSOS BEFORE UPDATE OR DELETE ON COMPRAS_CURSOS FOR EACH ROW
 BEGIN
-	INSERT INTO HCOMPRAS_CURSOS(com_cur_id, com_aln_pes_id, com_dt_ultimo_acesso, com_nota_teste, com_pag_realizado, COM_DATAHORA) 
+	INSERT INTO HCOMPRAS_CURSOS(com_cur_id,com_aln_pes_id, com_dt_ultimo_acesso, com_nota_teste, com_pag_realizado, COM_DATAHORA) 
     VALUES (:OLD.com_cur_id, :OLD.com_aln_pes_id, :OLD.com_dt_ultimo_acesso, :OLD.com_nota_teste, :OLD.com_pag_realizado, SYSDATE);
 END;
 /
