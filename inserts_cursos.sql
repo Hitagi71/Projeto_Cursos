@@ -271,7 +271,6 @@ INSERT INTO ACESSOS_COLABORADORES_CURSOS (ass_cur_id,ass_dt_acesso,ass_clb_pes_i
 INSERT INTO ACESSOS_COLABORADORES_CURSOS (ass_cur_id,ass_dt_acesso,ass_clb_pes_id) VALUES (45,TO_DATE('09/11/2019','mm/dd/yyyy'),36);
 INSERT INTO ACESSOS_COLABORADORES_CURSOS (ass_cur_id,ass_dt_acesso,ass_clb_pes_id) VALUES (35,TO_DATE('06/19/2020','mm/dd/yyyy'),45);
 INSERT INTO ACESSOS_COLABORADORES_CURSOS (ass_cur_id,ass_dt_acesso,ass_clb_pes_id) VALUES (7,TO_DATE('05/07/2020','mm/dd/yyyy'),49);
-INSERT INTO ACESSOS_COLABORADORES_CURSOS (ass_cur_id,ass_dt_acesso,ass_clb_pes_id) VALUES (49,TO_DATE('06/17/2020','mm/dd/yyyy'),42);
 INSERT INTO ACESSOS_COLABORADORES_CURSOS (ass_cur_id,ass_dt_acesso,ass_clb_pes_id) VALUES (45,TO_DATE('09/28/2019','mm/dd/yyyy'),42);
 INSERT INTO ACESSOS_COLABORADORES_CURSOS (ass_cur_id,ass_dt_acesso,ass_clb_pes_id) VALUES (24,TO_DATE('01/17/2020','mm/dd/yyyy'),43);
 INSERT INTO ACESSOS_COLABORADORES_CURSOS (ass_cur_id,ass_dt_acesso,ass_clb_pes_id) VALUES (28,TO_DATE('06/04/2020','mm/dd/yyyy'),39);

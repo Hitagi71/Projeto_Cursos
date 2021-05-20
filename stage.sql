@@ -1,3 +1,21 @@
+create table stage_compras (
+    stg_id_curso number(6),
+    stg_id_aluno number(6),
+    stg_nota_aluno float(2),
+    stg_dia_compra char(2),
+    stg_mes_compra char(2),
+    stg_ano_compra char(4),
+    stg_nome_curso varchar2(255),
+    stg_preco_curso number(8,2),
+    stg_nome_ctg_curso varchar2(255),
+    stg_nome_aut varchar2(62),
+    stg_cidade_compra varchar2(255),
+    stg_estado_compra varchar2(255),
+    stg_idade_aluno number(2)
+);
+
+alter table stage_compras add constraint pk_stg_compras primary key (stg_id_aluno, stg_id_curso);
+
 create or replace procedure pr_carga_stage_compras
 as
 begin
@@ -26,21 +44,3 @@ begin
     );
 end;
 /
-
-create table stage_compras (
-    stg_id_curso number(6),
-    stg_id_aluno number(6),
-    stg_nota_aluno float(2),
-    stg_dia_compra char(2),
-    stg_mes_compra char(2),
-    stg_ano_compra char(4),
-    stg_nome_curso varchar2(255),
-    stg_preco_curso number(8,2),
-    stg_nome_ctg_curso varchar2(255),
-    stg_nome_aut varchar2(62),
-    stg_cidade_compra varchar2(255),
-    stg_estado_compra varchar2(255),
-    stg_idade_aluno number(2)
-);
-
-alter table stage_compras add constraint pk_stg_compras primary key (stg_id_aluno, stg_id_curso);
