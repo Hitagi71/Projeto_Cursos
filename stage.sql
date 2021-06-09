@@ -1,3 +1,4 @@
+-- Stage Compras
 create table stage_compras (
     stg_id_curso number(6),
     stg_id_aluno number(6),
@@ -43,4 +44,45 @@ begin
             inner join alunos on com_aln_pes_id = aln_pes_id
     );
 end;
+/
+
+-- Stage Acessos
+create table stage_acessos_alunos (
+    stg_id_curso number(6),
+    stg_id_aluno number(6),
+    stg_hora_acesso char(2),
+    stg_dia_acesso char(2),
+    stg_mes_acesso char(2),
+    stg_ano_acesso char(4)
+);  
+
+create or replace procedure pr_carga_stage_acessos
+as
+begin
+    insert into stage_acessos_alunos (
+        select
+            com_cur_id as CURSO_ID,
+            com_aln_pes_id as ALUNO_ID,
+            to_char(com_dt_ultimo_acesso,'HH24') as HORA_ACESSO,
+            to_char(com_dt_ultimo_acesso,'dd') as DIA_ACESSO,
+            to_char(com_dt_ultimo_acesso,'mm') as MES_ACESSO,
+            to_char(com_dt_ultimo_acesso,'yyyy') as ANO_ACESSO
+        from
+            compras_cursos
+    );
+end;
+/
+
+create or replace procedure atualiza_acesso(id_cur IN number, id_aln IN number)
+AS
+BEGIN
+    update 
+        compras_cursos 
+    set 
+        com_dt_ultimo_acesso = SYSDATE 
+    where 
+        com_cur_id = id_cur and com_aln_pes_id = id_aln;
+    
+    pr_carga_stage_acessos();
+END;
 /
