@@ -48,13 +48,25 @@ end;
 
 -- Stage Acessos
 create table stage_acessos_alunos (
+    stg_id_acesso number(6),
     stg_id_curso number(6),
     stg_id_aluno number(6),
     stg_hora_acesso char(2),
     stg_dia_acesso char(2),
     stg_mes_acesso char(2),
     stg_ano_acesso char(4)
-);  
+);
+
+
+alter table stage_acessos_alunos add constraint stg_acessos_alunos_pk primary key (stg_id_acesso);
+
+create sequence sq_stg_acessos nocycle nocache;
+
+create trigger tg_seq_stg_acessos before insert on stage_acessos_alunos for each row
+begin
+    :new.stg_id_acesso := sq_stg_acessos.nextval;
+end;
+/
 
 create or replace procedure pr_carga_stage_acessos
 as
