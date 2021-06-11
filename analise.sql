@@ -1,8 +1,8 @@
 ------------------ Analise ----------------------
--- faixa etária alunos para cada curso, mais variancia
+-- faixa etária dos alunos cadastrados
 -- cursos mais vendidos em porcentagem
 -- vendas por autor
--- Relação notas categorias/curso
+-- Relação notas categorias
 
 -- 1) 
 with idade as (
@@ -14,29 +14,28 @@ with idade as (
 ) 
 
 select
-    cur_nome,
-    VARIANCE(idade_aluno) as Variancia,
     case 
-        when avg(idade_aluno) < 21 then '0 - 20'
-        when avg(idade_aluno) < 31 then '20 - 30'
-        when avg(idade_aluno) < 41 then '30 - 40'
-        when avg(idade_aluno) < 51 then '40 - 50'
-        when avg(idade_aluno) < 61 then '50 - 60'
+        when idade_aluno < 21 then '0 - 20'
+        when idade_aluno < 31 then '20 - 30'
+        when idade_aluno < 41 then '30 - 40'
+        when idade_aluno < 51 then '40 - 50'
+        when idade_aluno < 61 then '50 - 60'
         else 'Mais de 60'
-    end as Faixa
+    end as "Faixa etaria",
+    count(*) as "Quantidade de alunos"
 from 
-    compras_cursos
-inner join 
     alunos
-    on aln_pes_id = com_aln_pes_id
-inner join cursos
-    on cur_id = com_cur_id
- inner join
+inner join
     idade
-    on idade.aln_pes_id = compras_cursos.com_aln_pes_id
-group by
-    cur_nome
-order by 3
+    on idade.aln_pes_id = alunos.aln_pes_id
+group by case
+        when idade_aluno < 21 then '0 - 20'
+        when idade_aluno < 31 then '20 - 30'
+        when idade_aluno < 41 then '30 - 40'
+        when idade_aluno < 51 then '40 - 50'
+        when idade_aluno < 61 then '50 - 60'
+        else 'Mais de 60'
+    end;
     
 -- 2)
 with total_cursos as (
@@ -62,8 +61,8 @@ from
    
 -- 3)
 select
-    pes_prim_nome,
-    count(com_cur_id)
+    pes_prim_nome as Nome,
+    count(com_cur_id) as "Quantidade de cursos vendidos"
 from
     compras_cursos
 inner join cursos
@@ -73,7 +72,8 @@ inner join autores
 inner join pessoas
     on aut_pes_id = pes_id
 group by
-    pes_prim_nome    
+    pes_prim_nome
+order by 2 desc  
 
 -- 4)
 select 
