@@ -1,17 +1,17 @@
 ------------------ Estrategico ----------------------
--- Top 5 cursos mais vendidos
--- Top 5 cursos menos vendidos
--- Top 5 categorias menos vendidas
--- Top 5 cursos menores notas
+-- 1) Top 5 cursos mais vendidos
+-- 2) Top 5 cursos menos vendidos
+-- 3) Top 5 categorias menos vendidas
+-- 4) Top 5 cursos menores notas
 
---1) 
+--1) Estratégico
 select 
     *
 from
     (
-        select 
+        select
             dense_rank() over (order by count(*) desc) as posicao,
-            cur_nome,
+            cur_nome as "Curso Nome",
             pes_prim_nome || ' ' || pes_ult_nome as Nome,
             count(com_cur_id) as "Quantidade Vendida"
         from 
@@ -35,9 +35,9 @@ select
 from
     (
         select 
-            dense_rank() over (order by count(*)) as posicao,
-            cur_nome,
-            pes_prim_nome || ' ' || pes_ult_nome as Nome,
+            dense_rank() over (order by count(*)) as "Posicao",
+            cur_nome as "Curso Nome",
+            pes_prim_nome || ' ' || pes_ult_nome as "Nome",
             count(com_cur_id) as "Quantidade Vendida"
         from 
             compras_cursos
@@ -60,7 +60,7 @@ select
 from
     (
         select 
-            dense_rank() over (order by count(*) desc) as posicao,
+            dense_rank() over (order by count(*) desc) as "Posicao",
             ctg_nome,
             count(com_cur_id) as "Quantidade Vendida"
         from 
@@ -78,9 +78,9 @@ where posicao <= 5
     
 --4) Estratégico
 select 
-    posicao,
-    cur_nome,
-    to_char(Media_Nota, 'fm90.00') as Media_Nota
+    posicao as "Posição",
+    cur_nome as "Curso Nome",
+    to_char(Media_Nota, 'fm90.00') as "Media Nota"
 from
     (
         SELECT

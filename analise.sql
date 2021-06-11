@@ -1,8 +1,8 @@
 ------------------ Analise ----------------------
--- faixa etária dos alunos cadastrados
--- cursos mais vendidos em porcentagem
--- vendas por autor
--- Relação notas categorias
+-- 1) faixa etária dos alunos cadastrados
+-- 2) cursos mais vendidos em porcentagem
+-- 3) vendas por autor
+-- 4) Relação notas categorias
 
 -- 1) 
 with idade as (
